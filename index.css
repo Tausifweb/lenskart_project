@@ -1,0 +1,61 @@
+.callingDetails {
+  width: 90%;
+  height: 7em;
+  background-color: blanchedalmond;
+  margin: auto;
+  margin-top: 3%;
+  border-radius: 20px;
+  display: flex;
+}
+.mySlides {
+  width: 100%;
+}
+
+.imageSlide {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: black;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+#whatsApp {
+  margin-left: auto;
+  margin-right: auto;
+}
+#main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 5%;
+  border: 1px solid black;
+}
+.main_Image {
+  height: 200px;
+  gap: 2%;
+  width: 100%;
+}
+.img1 {
+  width: 95%;
+}
+#main2 {
+}
