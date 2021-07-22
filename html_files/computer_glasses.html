@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Lato", "Ariel", sans-serif;
+      }
+      .whole-window {
+        width: 95%;
+        margin: 1.5%;
+        display: flex;
+      }
+      .sorting-window {
+        flex-basis: 20%;
+        padding-right: 10px;
+      }
+      .product-window {
+        padding-left: 1%;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        margin-left: 10px;
+      }
+      .productRow {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 2%;
+        margin-bottom: 2%;
+      }
+      .productRow > a {
+        overflow: hidden;
+        height: 46.3vh;
+        text-decoration: none;
+        transition: box-shadow 0.3s;
+        color: black;
+        padding: 2%;
+      }
+      .icon {
+        display: block;
+        font-size: 150%;
+        text-align: right;
+      }
+      a > img {
+        width: 100%;
+      }
+      a p {
+        margin-bottom: 5px;
+      }
+      a:hover {
+        box-shadow: 0 0 5px 5px #e4e0e0;
+      }
+
+      .divSpecification {
+        overflow: hidden;
+        margin-top: 20px;
+        transition: margin-top 0.3s;
+      }
+
+      .divSpecification:hover {
+        margin-top: 0px;
+      }
+      .divSize {
+        color: white;
+      }
+      .divRating {
+        display: inline-block;
+        padding: 0px 5px;
+        border-radius: 10px;
+        color: white;
+        background-color: rgb(40, 199, 191);
+      }
+      .priceButton {
+        display: flex;
+        margin: 2% 0px;
+        margin-bottom: 1%;
+      }
+      .priceButton > p {
+        margin: 0px;
+      }
+      .priceButton > button {
+        flex-basis: 30%;
+        background-color: white;
+        border-color: rgb(224, 220, 220);
+      }
+      .priceButton > img {
+        width: 10%;
+      }
+      .space {
+        flex: 1;
+      }
+      .sorting-window {
+        display: flex;
+        flex-flow: column wrap;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        grid-gap: 2%;
+      }
+
+      .grid > div {
+        border: 1px solid #e6e6e6;
+        cursor: pointer;
+        overflow: hidden;
+        text-align: center;
+      }
+      .grid > div:hover {
+        border: 1px solid #1cbbb4;
+      }
+      .grid p {
+        font-size: 13px;
+      }
+      .grid img {
+        width: 100%;
+      }
+      .frameColor {
+        list-style: none;
+        padding: 0%;
+      }
+      .frameColor > li {
+        width: 100%;
+        height: 25px;
+      }
+      .frameColor > li input {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="whole-window">
+      <div class="sorting-window">
+        <div class="frameType">
+          <h4>FRAMETYPE</h4>
+          <div class="grid">
+            <div class="fullRim">
+              <img
+                src="https://static.lenskart.com/images/cust_mailer/Eyeglass/FullRim.png"
+              />
+              <p id="fullRim">FullRim</p>
+            </div>
+            <div class="halfRim">
+              <img
+                src="https://static.lenskart.com/images/cust_mailer/Eyeglass/FullRim.png"
+              />
+              <p id="halfRim">HalfRim</p>
+            </div>
+            <div class="rimless">
+              <img
+                src="https://static.lenskart.com/images/cust_mailer/Eyeglass/FullRim.png"
+              />
+              <p id="rimless">Rimless</p>
+            </div>
+          </div>
+        </div>
+        <div class="frameShape">
+          <h4>FRAMESHAPE</h4>
+          <div class="grid">
+            <div class="rectangle">
+              <img
+                src="https://static.lenskart.com/images/cust_mailer/Eyeglass/FullRim.png"
+              />
+              <p>Rectangle</p>
+            </div>
+            <div class="round">
+              <img
+                src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Round.png"
+              />
+              <p>Round</p>
+            </div>
+            <div class="catEye">
+              <img
+                src="https://static.lenskart.com/images/cust_mailer/Eyeglass/CatEye.png"
+              />
+              <p>CatEye</p>
+            </div>
+            <div class="square">
+              <img
+                src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Square.png"
+              />
+              <p>Square</p>
+            </div>
+            <div class="aviator">
+              <img
+                src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Aviator.png"
+              />
+              <p>Aviator</p>
+            </div>
+            <div class="wayfarer">
+              <img
+                src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Wayfarer.png"
+              />
+              <p>Wayfarer</p>
+            </div>
+            <div class="hexagonal">
+              <img
+                src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Hexagonal.png"
+              />
+              <p>Hexagonal</p>
+            </div>
+            <div class="clubmaster">
+              <img
+                src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Clubmaster.png"
+              />
+              <p>Clubmaster</p>
+            </div>
+          </div>
+        </div>
+        <ul class="frameColor">
+          <h4>FRAME COLOR</h4>
+          <li class="list-checkbox">
+            <label><input type="checkbox" /><span>Black</span></label>
+          </li>
+          <li class="list-checkbox">
+            <label><input type="checkbox" /><span>Brown</span></label>
+          </li>
+          <li class="list-checkbox">
+            <label><input type="checkbox" /><span>Blue</span></label>
+          </li>
+          <li class="list-checkbox">
+            <label><input type="checkbox" /><span>Grey</span></label>
+          </li>
+          <li class="list-checkbox">
+            <label><input type="checkbox" /><span>Golden</span></label>
+          </li>
+          <li class="list-checkbox">
+            <label><input type="checkbox" /><span>Green</span></label>
+          </li>
+          <li class="list-checkbox">
+            <label><input type="checkbox" /><span>Pink</span></label>
+          </li>
+          <li class="list-checkbox">
+            <label><input type="checkbox" /><span>Maroon</span></label>
+          </li>
+        </ul>
+      </div>
+      <div class="product-window"></div>
+    </div>
+  </body>
+</html>
+<script src="computer_glasses.js"></script>
