@@ -3,6 +3,12 @@ let arr = [
     {
       i: "ion-ios7-heart-outline",
       img: "https://static1.lenskart.com/media/catalog/product/cache/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//e/n/enskart-blu-lb-e13736-full-rim-round-c4-eyeglasses_g_0986.jpg",
+      img1: "https://static1.lenskart.com/media/catalog/product/cache/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//e/n/enskart-blu-lb-e13736-full-rim-round-c4-eyeglasses_g_0985.jpg",
+      img2: "https://static.lenskart.com/media/catalog/product/cache/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//e/n/enskart-blu-lb-e13736-full-rim-round-c4-eyeglasses_g_0988.jpg",
+      img3: "https://static1.lenskart.com/media/catalog/product/cache/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//e/n/enskart-blu-lb-e13736-full-rim-round-c4-eyeglasses_g_0989.jpg",
+      img4: "https://static2.lenskart.com/media/catalog/product/cache/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//e/n/enskart-blu-lb-e13736-full-rim-round-c4-eyeglasses_g_0991.jpg",
+      img5: "https://static.lenskart.com/media/catalog/product/cache/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//e/n/enskart-blu-lb-e13736-full-rim-round-c4-eyeglasses_g_0986_image_pla.jpg",
+      img6: "https://static2.lenskart.com/media/catalog/product/cache/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//e/n/enskart-blu-lb-e13736-full-rim-round-c4-eyeglasses_g_0986.jpg",
       brand: "Lenskart Blu",
       rating: "4.3",
       star: "ion-ios7-star",
@@ -199,26 +205,80 @@ let arr = [
       size: "Medium",
     },
   ],
+  [
+    {
+      i: "ion-ios7-heart-outline",
+      img: "https://static2.lenskart.com/media/catalog/product/cache/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e13636-ful-ram-avtr-mt-dup-c2-eyeglassas_g_9569.jpg",
+      brand: "Vincent Chase Computer Glasses",
+      rating: "4.5",
+      star: "ion-ios7-star",
+      priceImg: "₹",
+      frameType: "HalfRim",
+      link: "https://www.lenskart.com/vincent-chase-vc-e13636-full-rim-aviator-metal-steel-escobar-c2-computer-eyeglasses.html",
+      frameShape: "Aviator",
+      frameColor: "Grey",
+      price: "1500",
+      sample:
+        "https://static.lenskart.com/media/desktop/img/desktop_pdp_model.png",
+      size: "Medium",
+    },
+    {
+      i: "ion-ios7-heart-outline",
+      img: "https://static2.lenskart.com/media/catalog/product/cache/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12402-c1-dup-eyeglasses_j_5229_2.jpg",
+      brand: "Vincent Chase Computer Glasses",
+      rating: "4.6",
+      star: "ion-ios7-star",
+      priceImg: "₹",
+      frameType: "HalfRim",
+      link: "https://www.lenskart.com/silver-blue-half-rim-square-large-size-53-vincent-chase-steel-escobar-vc-e12402-c1-smartphone-pc-eyeglasses.html",
+      frameShape: "Square",
+      frameColor: "Golden",
+      price: "1500",
+      sample:
+        "https://static.lenskart.com/media/desktop/img/desktop_pdp_model.png",
+      size: "Wide",
+    },
+    {
+      i: "ion-ios7-heart-outline",
+      img: "https://static1.lenskart.com/media/catalog/product/cache/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e13687-c1-eyeglasses_g_0643_1.jpg",
+      brand: "Vincent Chase Computer Glasses",
+      rating: "4",
+      star: "ion-ios7-star",
+      priceImg: "₹",
+      frameType: "Rimless",
+      link: "https://www.lenskart.com/vincent-chase-vc-e13686-c1-dup-eyeglasses.html",
+      frameShape: "Round",
+      frameColor: "Golden",
+      price: "1500",
+      sample:
+        "https://static.lenskart.com/media/desktop/img/desktop_pdp_model.png",
+      size: "Medium",
+    },
+  ],
 ];
 if (localStorage.getItem("glass_img") == null)
   localStorage.setItem("glass_img", JSON.stringify(arr));
 
 let productWindow = document.querySelector(".product-window");
 
-function showProducts(el) {
-  let glasses = el;
-
+function showProducts(e) {
+  let glasses = e;
+  let index = 0;
   glasses.forEach((el) => {
     let divRow = document.createElement("div");
     divRow.setAttribute("class", "productRow");
     el.forEach((i) => {
-      let a = document.createElement("a");
-      a.href = i.link;
+      let diveachProd = document.createElement("div");
+      diveachProd.setAttribute("class", "eachProd");
+      // a.href = i.link;
+      diveachProd.value = i.link;
 
       let heartIcon = document.createElement("i");
       heartIcon.setAttribute("class", `${i.i} icon`);
 
       let img = document.createElement("img");
+      img.setAttribute("id", `${index}`);
+      index++;
       img.src = i.img;
 
       let divSpecification = document.createElement("div");
@@ -254,8 +314,8 @@ function showProducts(el) {
 
       divSpecification.append(pBrand, divRating, priceButton, divSize);
 
-      a.append(heartIcon, img, divSpecification);
-      divRow.appendChild(a);
+      diveachProd.append(heartIcon, img, divSpecification);
+      divRow.appendChild(diveachProd);
     });
     productWindow.append(divRow);
   });
@@ -336,3 +396,24 @@ divrimless.addEventListener("click", function () {
   productWindow.innerHTML = "";
   showProducts(newData);
 });
+function addListener() {
+  var div = document.querySelectorAll(".eachProd");
+  for (let i = 0; i < div.length; i++) {
+    div[i].addEventListener("click", function () {
+      localStorage.removeItem("clickedObj");
+      let image = document.getElementById(`${i}`);
+      data1 = JSON.parse(localStorage.getItem("glass_img"));
+      for (let j = 0; j < data1.length; j++) {
+        for (let k = 0; k < 3; k++) {
+          if (data1[j][k].img == image.src) {
+            console.log(data1[j][k]);
+            localStorage.setItem("clickedObj", JSON.stringify(data1[j][k]));
+            window.location.href = "onePage.html";
+            return true;
+          }
+        }
+      }
+    });
+  }
+}
+addListener();
