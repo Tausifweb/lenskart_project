@@ -40,12 +40,26 @@ body {
     float: left;
 }
 
+#main-nav {
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    height: 50px;
+    margin-top: -8px;
+    width: 200%;
+    margin-left: -8px;
+}
+
 #nav-bar-middle {
     display: flex;
     width: 95%;
-    height: 40px;
+    height: 45px;
     margin: auto;
-    margin-bottom: -5px;
+    margin-top: 2px;
+    position: fixed;
+    z-index: 999;
+    margin-left: 30px;
+    background-color: white;
 }
 
 #nav-bar-middle img {
@@ -148,7 +162,9 @@ body {
     background-color: #dcdbd4;
     width: 100%;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 50px;
+    position: fixed;
+    z-index: 999;
 }
 
 #left-text {
@@ -203,7 +219,8 @@ body {
     height: 340px;
     margin: auto;
     margin-left: 10px;
-    z-index: 999;
+    background-color: white;
+    margin-top: 100px;
 }
 
 #drop-down-gender>div {
@@ -398,6 +415,8 @@ body {
     margin: auto;
     margin-left: 10px;
     z-index: 999;
+    background-color: white;
+    margin-top: 100px;
 }
 
 
@@ -417,6 +436,8 @@ body {
     margin: auto;
     margin-left: 10px;
     z-index: 999;
+    background-color: white;
+    margin-top: 100px;
 }
 
 
@@ -457,6 +478,8 @@ body {
     margin: auto;
     margin-left: 10px;
     z-index: 999;
+    background-color: white;
+    margin-top: 100px;
 }
 
 #drop-down6>img {
@@ -520,6 +543,8 @@ body {
     margin: auto;
     margin-left: 10px;
     z-index: 999;
+    background-color: white;
+    margin-top: 100px;
 }
 
 #drop-down7>img {
@@ -599,6 +624,8 @@ body {
     margin: auto;
     margin-left: 10px;
     z-index: 999;
+    background-color: white;
+    margin-top: 100px;
 }
 
 #drop-down5-category {
@@ -618,6 +645,8 @@ body {
     margin-left: 10px;
     z-index: 999;
     letter-spacing: 0.5px;
+    background-color: white;
+    margin-top: 100px;
 }
 
 #drop-down4>div {
@@ -711,7 +740,7 @@ body {
     width: 42%;
     height: 49%;
     margin-left: 520px !important;
-    margin-top: -70px;
+    margin-top: 30px;
     box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
     border: 1px solid rgba(0, 0, 0, .2);
     outline: 0;
@@ -811,11 +840,15 @@ body {
     width: 42%;
     height: 59.5%;
     margin-left: 520px !important;
-    margin-top: -70px;
+    margin-top: 30px;
     box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
     border: 1px solid rgba(0, 0, 0, .2);
     outline: 0;
     color: #757575;
+}
+
+#sign-up>div>img {
+    height: 100%;
 }
 
 #sign-up>div:nth-of-type(2) {
