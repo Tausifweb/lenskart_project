@@ -16,8 +16,3 @@ function closeOption() {
     signUp.style.display = "none";
     signIn.style.display = "none";
 }
-
-
-setInterval(function () {
-    console.log(document.body.scrollTop);
-}, 2000);

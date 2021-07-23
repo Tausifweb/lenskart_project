@@ -40,25 +40,36 @@ body {
     float: left;
 }
 
+#main-body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+}
+
 #main-nav {
     position: fixed;
     z-index: 999;
     background-color: white;
     height: 50px;
     margin-top: -8px;
+    padding-top: 5px;
     width: 200%;
     margin-left: -8px;
 }
 
 #nav-bar-middle {
     display: flex;
-    width: 95%;
-    height: 45px;
+    width: 100%;
+    height: 50px;
     margin: auto;
-    margin-top: 2px;
+    margin-top: 0px;
     position: fixed;
     z-index: 999;
-    margin-left: 30px;
+    margin-left: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
     background-color: white;
 }
 
@@ -212,15 +223,16 @@ body {
 
 
 #drop-down {
-    position: absolute;
+    position: fixed;
     display: none;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     width: 98%;
     height: 340px;
     margin: auto;
-    margin-left: 10px;
+    margin-left: 20px;
     background-color: white;
     margin-top: 100px;
+    z-index: 999;
 }
 
 #drop-down-gender>div {
@@ -246,6 +258,7 @@ body {
     margin: auto;
     height: 40px !important;
     padding-top: 24px;
+    padding-bottom: 40px;
     padding-right: 30px !important;
 }
 
@@ -258,11 +271,11 @@ body {
 }
 
 #drop-down-men>img {
-    padding-left: 20px;
+    margin-left: 30px;
 }
 
 #drop-down-kids>img {
-    padding-left: 20px;
+    margin-left: 25px;
 }
 
 #drop-down-women {
@@ -271,7 +284,6 @@ body {
     align-items: center;
     justify-content: space-around;
     width: 98%;
-
 }
 
 #drop-down-kids {
@@ -290,6 +302,7 @@ body {
     height: 40px !important;
     padding-top: 24px;
     padding-right: 30px !important;
+    padding-bottom: 40px;
 }
 
 #select-category1 {
@@ -370,6 +383,7 @@ body {
     align-items: center;
     padding-left: 15px;
     padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 .nav-title~div {
@@ -407,13 +421,13 @@ body {
 
 /* =============================== */
 #drop-down2 {
-    position: absolute;
+    position: fixed;
     display: none;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     width: 98%;
     height: 340px;
     margin: auto;
-    margin-left: 10px;
+    margin-left: 20px;
     z-index: 999;
     background-color: white;
     margin-top: 100px;
@@ -428,13 +442,13 @@ body {
 
 
 #drop-down3 {
-    position: absolute;
+    position: fixed;
     display: none;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     width: 98%;
     height: 340px;
     margin: auto;
-    margin-left: 10px;
+    margin-left: 20px;
     z-index: 999;
     background-color: white;
     margin-top: 100px;
@@ -470,13 +484,13 @@ body {
 
 
 #drop-down6 {
-    position: absolute;
+    position: fixed;
     display: none;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     width: 98%;
     height: 340px;
     margin: auto;
-    margin-left: 10px;
+    margin-left: 20px;
     z-index: 999;
     background-color: white;
     margin-top: 100px;
@@ -503,7 +517,7 @@ body {
     font-size: 15px;
     background: linear-gradient(80deg, #31b2b0, #edbc31);
     width: 28%;
-    height: 6%;
+    height: 50px;
     padding: 14px 10px;
     letter-spacing: 1px;
     margin-left: 7px;
@@ -535,13 +549,13 @@ body {
 }
 
 #drop-down7 {
-    position: absolute;
+    position: fixed;
     display: none;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     width: 98%;
     height: 340px;
     margin: auto;
-    margin-left: 10px;
+    margin-left: 20px;
     z-index: 999;
     background-color: white;
     margin-top: 100px;
@@ -568,7 +582,7 @@ body {
     font-size: 15px;
     background: linear-gradient(80deg, #31b2b0, #edbc31);
     width: 18%;
-    height: 5%;
+    height: 50px;
     padding: 17px 10px;
     margin-left: 7px;
     margin-top: 15px;
@@ -616,13 +630,13 @@ body {
 }
 
 #drop-down5 {
-    position: absolute;
+    position: fixed;
     display: none;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     width: 98%;
     height: 340px;
     margin: auto;
-    margin-left: 10px;
+    margin-left: 20px;
     z-index: 999;
     background-color: white;
     margin-top: 100px;
@@ -636,13 +650,13 @@ body {
 
 
 #drop-down4 {
-    position: absolute;
+    position: fixed;
     display: none;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     width: 96%;
     height: 450px;
     margin: auto;
-    margin-left: 10px;
+    margin-left: 20px;
     z-index: 999;
     letter-spacing: 0.5px;
     background-color: white;
