@@ -61,7 +61,7 @@ function productScroll() {
 
     prev[i].addEventListener("click", function () {
       //click previos button
-      if (position > 0) {
+      if ((position = 0)) {
         //avoid slide left beyond the first item
         position -= 1;
         translateX(position); //translate items
@@ -107,17 +107,17 @@ function getCount(parent, getChildrensChildren) {
 ////////////////
 
 /// 3 iamge slideing start here
-const wrapper = document.getElementsByClassName("wrapper");
-const button = document.getElementById("click");
-const button2 = document.getElementById("click2");
+let wrapper = document.getElementsByClassName("wrapper");
+let button = document.getElementById("click");
+let button2 = document.getElementById("click2");
 
 button.addEventListener("click", clicked);
 button2.addEventListener("click", clicked2);
 let scroll = 0;
 
-wrapper[0].addEventListener("scroll", function (event) {
-  scroll = wrapper[0].scrollLeft;
-});
+// wrapper[0].addEventListener("scroll", function (event) {
+//   scroll = wrapper[0].scrollLeft;
+// });
 
 function clicked() {
   scroll = scroll += 500;
