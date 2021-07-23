@@ -148,3 +148,223 @@
   margin-left: auto;
   margin-right: auto;
 }
+#lastyoutube {
+  height: 290px;
+  background-color: #fef5e4;
+
+  width: 100%;
+  display: flex;
+  margin-top: 4%;
+}
+.lastyoutube1 {
+  width: 40%;
+  padding: 1.3%;
+}
+.lastyoutubeRight {
+  margin-left: 7%;
+}
+
+/* /////////////////////////
+slide part start
+
+///// */
+
+.slider {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  margin: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider .slide {
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: 0.3s left ease-in-out;
+}
+
+.slider .item {
+  margin-right: 10px;
+}
+
+.slider .item:last-child {
+  margin-right: 0;
+}
+
+.ctrl {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.ctrl-btn {
+  padding: 5px 5px;
+  min-width: 50px;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+
+  position: absolute;
+  top: 50%;
+  margin-top: -27.5px;
+}
+
+.ctrl-btn.pro-prev {
+  left: 0;
+}
+
+.ctrl-btn.pro-next {
+  right: 0;
+}
+.item {
+  background-color: blueviolet;
+  color: brown;
+  width: 100%;
+  height: 200px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* ///
+
+
+
+/////////////////3 images slide */
+.container {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.wrapper {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  margin: 0 auto;
+  position: relative;
+}
+
+li {
+  display: inline-block;
+  /* padding: 10px;  */
+}
+
+.product-container {
+  text-align: center;
+  padding: 1%;
+  border: 1px solid black;
+
+  margin: 1.5%;
+}
+
+.wrapper::-webkit-scrollbar {
+  height: 7px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+  background: #eeeeee;
+  border: 4px solid transparent;
+  background-clip: content-box;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+#click2 {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  width: 35px;
+  height: 80px;
+  background: white;
+  border: 1px solid #888;
+  border-left: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#click {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 45px;
+  height: 240px;
+  background: black;
+  border: 1px solid #888;
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#click:hover,
+#click2:hover {
+  opacity: 1;
+}
+
+.right-arrow {
+  background: url(https://comunit.github.io/Product-slider/img/right.png)
+    no-repeat;
+  background-position: 50% 50%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-size: 40%;
+}
+
+.left-arrow {
+  background: url(https://comunit.github.io/Product-slider/img/left.png)
+    no-repeat;
+  background-position: 50% 50%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-size: 40%;
+}
+/* //////////////////
+
+
+yaha tak slide wal part  hai
+
+////// */
+
+#EXPLOREMORE {
+  display: block;
+  margin: 0 auto;
+  background-color: #3b9f95;
+  color: #eeeeee;
+  border: none;
+  width: 12%;
+  height: 35px;
+  margin-top: 2%;
+}
+
+#viewRange {
+  display: block;
+  margin: 0 auto;
+  background-color: #3b9f95;
+  color: #eeeeee;
+  border: none;
+  width: 12%;
+  height: 35px;
+  margin-top: 2%;
+}
