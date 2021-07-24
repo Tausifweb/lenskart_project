@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .whole_section {
+        display: flex;
+        width: 850px;
+        margin: 0px auto;
+      }
+      #functionScreen {
+        flex-basis: 75%;
+      }
+      .heading {
+        padding-top: 3px;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        border-bottom: 1px solid rgb(197, 194, 194);
+        border-left: 1px solid rgb(197, 194, 194);
+        border-right: 1px solid rgb(197, 194, 194);
+        margin-bottom: 15px;
+      }
+      .heading > input {
+        display: none;
+        visibility: hidden;
+      }
+      .heading > label {
+        margin-left: 10px;
+        display: block;
+      }
+      .hidden {
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.8s padding 0.5s;
+      }
+
+      #promoCodeInputCheckBox:checked ~ .hidden {
+        padding-top: 35px;
+        height: 70px;
+        border-radius: 5px;
+        background-color: white;
+        padding-left: 20px;
+      }
+      .promoCodeInput {
+        height: 30px;
+        margin-right: 5px;
+      }
+      .hidden > button {
+        background-color: #00bac6;
+        color: white;
+        border-color: #00bac6;
+      }
+      .hidden1 {
+        padding: 0px 10px;
+        display: flex;
+        background-color: white;
+      }
+      .hidden1 > div {
+        flex-basis: 35%;
+        margin-right: 10px;
+      }
+      .hidden1 > form {
+        flex: 1;
+      }
+      .hidden1 > form > div {
+        margin-top: 10px;
+        display: flex;
+        height: 30px;
+        flex-flow: row wrap;
+      }
+      .eachDiv {
+        flex-basis: 30%;
+      }
+      .image {
+        flex-basis: 50%;
+      }
+      .image img {
+        width: 100%;
+      }
+      .space {
+        flex: 1;
+      }
+      .block {
+        display: block;
+        width: 100%;
+      }
+      #debitOption > div {
+        padding: 15px 10px;
+        margin-bottom: 2px;
+        background-color: #efefef;
+      }
+      #debitOption > div:first-child {
+        background-color: white;
+      }
+      #allDebitInpits > input {
+        height: 30px;
+        margin-bottom: 15px;
+      }
+      /* #debitOption {
+        flex-basis: 40%;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="whole_section">
+      <div id="functionScreen">
+        <div id="promoCodeSection" class="heading">
+          <input type="checkbox" id="promoCodeInputCheckBox" />
+          <label for="promoCodeInputCheckBox"
+            ><h4>PROMOTIONAL DISCOUNT</h4></label
+          >
+          <div class="hidden">
+            <input type="text" class="promoCodeInput" />
+            <button class="promoCodeInput">APPLY</button>
+          </div>
+        </div>
+        <div id="paymentSection" class="heading">
+          <input type="checkbox" id="paymentOptionCheckBox" checked />
+          <label for="paymentOptionCheckBox"><h4>PAYMENT OPTIONS</h4></label>
+          <div class="hidden1">
+            <div id="debitOption">
+              <div>Credit/Debit Card</div>
+              <div>BHIM UPI/ Phone Pe</div>
+              <div>Net Banking</div>
+              <div>UPI QR Code</div>
+              <div>Paytm</div>
+              <div>Google Pay</div>
+              <div>Show More Options</div>
+            </div>
+            <form id="allDebitInpits">
+              <div>
+                <div class="eachDiv">100% Secure</div>
+                <div class="space"></div>
+                <div class="eachDiv image">
+                  <img
+                    src="https://static5.lenskart.com/images/cust_mailer/Mar-03/CheckoutStrip.png"
+                  />
+                </div>
+              </div>
+              <input
+                type="number"
+                placeholder="Enter Card Number"
+                class="block"
+                style="margin-right: '10px'"
+              />
+              <input type="month" />
+              <input type="number" placeholder="CVV" />
+              <input type="text" class="block" placeholder="Cardholder Name" />
+              <button>PLACE ORDER</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="totalPaymentScreen"></div>
+    </div>
+  </body>
+</html>

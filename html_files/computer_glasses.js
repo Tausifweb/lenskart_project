@@ -277,6 +277,7 @@ function showProducts(e) {
       heartIcon.setAttribute("class", `${i.i} icon`);
 
       let img = document.createElement("img");
+      img.removeAttribute("id");
       img.setAttribute("id", `${index}`);
       index++;
       img.src = i.img;
@@ -345,6 +346,7 @@ divfullRim.addEventListener("click", function () {
   }
   productWindow.innerHTML = "";
   showProducts(newData);
+  addListener();
 });
 
 let divhalfRim = document.querySelector(".halfRim");
@@ -370,6 +372,7 @@ divhalfRim.addEventListener("click", function () {
   }
   productWindow.innerHTML = "";
   showProducts(newData);
+  addListener();
 });
 
 let divrimless = document.querySelector(".rimless");
@@ -395,6 +398,7 @@ divrimless.addEventListener("click", function () {
   }
   productWindow.innerHTML = "";
   showProducts(newData);
+  addListener();
 });
 function addListener() {
   var div = document.querySelectorAll(".eachProd");
@@ -406,7 +410,6 @@ function addListener() {
       for (let j = 0; j < data1.length; j++) {
         for (let k = 0; k < 3; k++) {
           if (data1[j][k].img == image.src) {
-            console.log(data1[j][k]);
             localStorage.setItem("clickedObj", JSON.stringify(data1[j][k]));
             window.location.href = "onePage.html";
             return true;
@@ -415,5 +418,6 @@ function addListener() {
       }
     });
   }
+  // console.log(div);
 }
 addListener();
