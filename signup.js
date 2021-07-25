@@ -80,12 +80,12 @@ function login() {
         alert("Email is empty")
     } else {
         usersarr.forEach(function (el) {
-            if (email == el.email || email == el.mobile) {
+            if (email == el.Email || email == el.Mobile) {
                 res = true
             }
         })
         if (res == true) {
-            alert("login successful")
+            alert("Login Successful")
             window.location.href = "computer_glasses.html"
         } else {
             alert("Invalid Credentials")
