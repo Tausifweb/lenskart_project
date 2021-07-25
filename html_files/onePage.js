@@ -226,3 +226,8 @@ let totalMoney = cart.reduce((acc, el) => {
 }, 0);
 console.log(totalMoney);
 totalPrice.innerHTML = `Order Total: ${totalMoney}`;
+
+let button_checkout = document.querySelector(".button_checkout");
+button_checkout.addEventListener("click", function () {
+  window.location.href = "address.html";
+});
