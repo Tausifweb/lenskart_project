@@ -52,6 +52,7 @@
   padding: 1.2%;
   margin-top: -225px;
   position: absolute;
+  cursor: pointer;
 }
 
 .next-btn {
@@ -62,6 +63,7 @@
   position: absolute;
   margin-left: 96.8%;
   margin-top: -225px;
+  cursor: pointer;
 }
 
 .slide-show-cont {
@@ -106,24 +108,19 @@
   margin: 0.1%;
 }
 
-/* .youtube {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  height: 190px;
-} */
 .youtube1 {
   width: 100%;
   height: 190px;
 }
 
 #pinkpink {
-  width: 100%;
+  width: 98%;
+  margin: auto;
   height: 320px;
   background-color: #ffb79e;
   display: flex;
   padding-top: 20px;
+  margin-top: 50px;
 }
 
 #pinkPra {
@@ -140,41 +137,47 @@
 }
 
 #youtube2 {
-  height: 290px;
+  height: 370px;
   background-color: #fef5e4;
-
-  width: 100%;
+  width: 98%;
   display: flex;
+  margin: auto;
+  margin-top: 30px;
 }
 
 .youtube3 {
   width: 40%;
   padding: 1.3%;
+  margin-top: 15px;
+
 }
 
 .youtube2Right {
   margin-left: 7%;
+  margin-top: 50px;
 }
 
 #celbrating {
   width: 90%;
-  margin-top: 2%;
+  margin-top: 1%;
   margin-left: auto;
   margin-right: auto;
 }
 
 #lastyoutube {
-  height: 290px;
+  height: 350px;
   background-color: #fef5e4;
-
-  width: 100%;
+  width: 98%;
   display: flex;
-  margin-top: 4%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding-top: 5px;
 }
 
 .lastyoutube1 {
   width: 40%;
-  padding: 1.3%;
+  padding: 20px;
 }
 
 .lastyoutubeRight {
@@ -260,8 +263,8 @@ slide part start
 .container {
   position: relative;
   width: 95%;
-  margin: 0 auto;
-  margin-top: 3%;
+  margin: auto;
+  margin-top: -20px;
 }
 
 .wrapper {
@@ -288,16 +291,17 @@ li {
 }
 
 .wrapper::-webkit-scrollbar {
-  height: 7px;
+  height: 0px;
 }
 
 .wrapper::-webkit-scrollbar-track {
   background: #eeeeee;
-  border: 4px solid transparent;
+  border: 4px solid white;
   background-clip: content-box;
 }
 
-#click2 {
+#click2,
+#clicks2 {
   position: absolute;
   top: 35%;
   left: 0%;
@@ -311,7 +315,8 @@ li {
   cursor: pointer;
 }
 
-#click {
+#click,
+#clicks {
   position: absolute;
   top: 35%;
   right: 0%;
@@ -349,9 +354,7 @@ li {
   background-size: 40%;
 }
 
-/* //////////////////
-yaha tak slide wal part  hai
-////// */
+
 
 #EXPLOREMORE {
   display: block;
@@ -362,6 +365,7 @@ yaha tak slide wal part  hai
   width: 12%;
   height: 35px;
   margin-top: 2%;
+  margin-bottom: 150px;
 }
 
 #viewRange {
@@ -372,7 +376,8 @@ yaha tak slide wal part  hai
   border: none;
   width: 12%;
   height: 35px;
-  margin-top: 2%;
+  margin-top: -20px;
+  margin-bottom: 80px;
 }
 
 
@@ -385,22 +390,34 @@ yaha tak slide wal part  hai
 .dropdownsec {
   display: flex;
   padding: 2%;
+  margin-top: -30px;
 }
 
 .boxsec {
-  padding: 2%;
+  padding: 40px;
+  margin-right: -50px;
+}
 
+.box {
+  background-color: #FAFAFA;
+  height: 180px;
+  width: 270px;
+  border-radius: 10px;
+  padding: 15px;
 }
 
 .dropbox {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 250px;
+  min-width: 260px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  text-align: center;
   height: auto;
+  margin-left: 5px;
+  margin-top: 7px;
+  border-radius: 0px !important;
+
 }
 
 .text_area {
@@ -419,18 +436,22 @@ yaha tak slide wal part  hai
 
 .hoversec {
   padding: 2%;
-  border-bottom: 1px solid black;
-  gap: 0%
+  border-bottom: 1px solid rgb(216, 216, 216);
+  gap: 0%;
+  cursor: pointer;
+}
+
+.hoversec:hover {
+  background-color: white;
 }
 
 .boxsec:hover .dropbox {
   display: block;
-  border-radius: 5%;
 }
 
 .imgs {
   width: 100%;
-  height: 100%;
+
 }
 
 .box p {
@@ -441,11 +462,129 @@ yaha tak slide wal part  hai
   width: 100%;
   height: 100%;
   border: none;
-  font-size: 20px;
+  font-size: 17px;
   align-items: left;
   cursor: pointer;
+  background-color: #f9f9f9;
+  color: #37b4c7;
+}
+
+#viewbtn:hover {
+  background-color: white;
 }
 
 .p_tag {
   font-size: 20px;
+}
+
+
+.lastyoutubeRight>img {
+  width: 75%;
+  padding-top: 90px;
+}
+
+
+#computer-glasses-div {
+  text-align: center;
+  margin-top: 5%;
+  line-height: 210%;
+}
+
+
+#computer-glasses-p {
+  letter-spacing: 4px;
+  font-family: futurastd-heavy;
+  font-weight: 400;
+  font-size: 26px;
+  color: #445962;
+}
+
+.font-green {
+  color: #3b9f95
+}
+
+
+#insta-div {
+  color: gray;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 5%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+#insta-hr {
+  margin-top: 0.8%;
+  height: 0.9px;
+  border-width: 0;
+  color: gray;
+  background-color: gray;
+}
+
+
+#insta-assistance {
+  text-align: center;
+  font-size: 130%;
+  margin-top: 20px;
+}
+
+#insta-hr2 {
+  margin-top: 3%;
+  height: 0.9px;
+  border-width: 0;
+  color: gray;
+  background-color: gray;
+}
+
+
+#pinkPra>div {
+  margin: 15%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+
+
+#whatsApp>a>img {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%
+}
+
+#whatsApp+div {
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  margin: 10px;
+}
+
+#know-more {
+  color: #00bdd6;
+  font-size: 22px;
+  text-align: right;
+  margin-left: 37%;
+  cursor: pointer;
+  text-decoration-line: none;
+  padding-top: 23px;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+#know-more>a {
+  text-decoration: none
+}
+
+.callingDetails>div:nth-of-type(1) {
+  padding: 2%;
+  padding-top: 23px;
+  font-family: FuturaStd-Heavy;
+  font-size: 30px;
+  color: #333;
+}
+
+.callingDetails>div:nth-of-type(2)>p {
+  padding-top: 30px;
+  text-align: left;
+  font-size: 110%;
+  padding-left: 20px;
 }
